@@ -1,10 +1,17 @@
-# catch-of-the-day
+# catch-of-the-day 
 A single page react app for fresh seafood market.
+
+Try the demo[https://catch-of-the-day-nikhil.netlify.com/]
 <hr>
 
 This is a react based single page web app for sale of fresh caught seafood online. 
 I used Firebase as the database and Oauth sign-up.
 
+![capture](https://user-images.githubusercontent.com/30730696/51416201-78fadd00-1b9e-11e9-8d04-bbc0ca428d76.JPG)
+
+<br>
+
+![capture1](https://user-images.githubusercontent.com/30730696/51416236-a051aa00-1b9e-11e9-9912-a088a361d282.JPG)
 
 
 ###
