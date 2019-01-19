@@ -1,10 +1,6 @@
 # catch-of-the-day 
-A single page react app for fresh seafood market.
-
-Try the [Demo](https://catch-of-the-day-nikhil.netlify.com/)
-<hr>
-
 ## This is a React based single page web app for online sale of fresh caught seafood. 
+Try the [Demo](https://catch-of-the-day-nikhil.netlify.com/)
 
 ----
 ## What is it?
