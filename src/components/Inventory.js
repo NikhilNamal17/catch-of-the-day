@@ -10,9 +10,9 @@ class Inventory extends React.Component {
     static propTypes = {
         fishes: propTypes.object,
         updateFish: propTypes.func.isRequired,
-        deleteFish: propTypes.func,
-        loadSampleFishes: propTypes.func,
-        addFish: propTypes.func
+        deleteFish: propTypes.func.isRequired,
+        loadSampleFishes: propTypes.func.isRequired,
+        addFish: propTypes.func.isRequired
     };
 
     state = {
