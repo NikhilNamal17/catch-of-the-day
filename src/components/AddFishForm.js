@@ -4,7 +4,7 @@ import propTypes from 'prop-types'
 class AddFishForm extends React.Component {
 
     static propTypes = {
-        addFish: propTypes.func
+        addFish: propTypes.func.isRequired;
     }
 
     nameRef = React.createRef();  
