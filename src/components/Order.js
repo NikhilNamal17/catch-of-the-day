@@ -8,7 +8,7 @@ import {formatPrice} from '../helpers';
     static propTypes = {
         fishes: propTypes.object,
         order: propTypes.object,
-        removeOrder: propTypes.func,
+        removeOrder: propTypes.func.isRequired,
 
     }
 
