@@ -1,24 +1,23 @@
-import React from 'react';
-import propTypes from 'prop-types';
+import React from "react";
+import propTypes from "prop-types";
 
-class EditFishForm extends React.Component{
-
+class EditFishForm extends React.Component {
     static propTypes = {
         fish: propTypes.shape({
             image: propTypes.string,
             name: propTypes.string,
             desc: propTypes.string,
             status: propTypes.string,
-            price: propTypes.number,
+            price: propTypes.number
         }),
         index: propTypes.string,
-        updateFish: propTypes.func.isRequired,
-        deleteFish: propTypes.func.isRequired,
-    }
+        updateFish: propTypes.func,
+        deleteFish: propTypes.func
+    };
 
-    handleChange = (event) => {
+    handleChange = event => {
         console.log(event.currentTarget.value);
-        
+
         //update the fish
         //take a copy of current fish
         const updatedFish = {
@@ -29,39 +28,49 @@ class EditFishForm extends React.Component{
     };
 
     render() {
-        return(
+        return (
             <div className="fish-edit">
-                <input 
-                    type="text" 
+                <input
+                    type="text"
                     name="name"
                     onChange={this.handleChange}
-                    value={this.props.fish.name} />
-                <input 
-                    type="text" 
+                    value={this.props.fish.name}
+                />
+                <input
+                    type="text"
                     name="price"
                     onChange={this.handleChange}
-                    value={this.props.fish.price} />
-                <select 
-                    type="text" 
+                    value={this.props.fish.price}
+                />
+                <select
+                    type="text"
                     name="status"
                     onChange={this.handleChange}
-                    value={this.props.fish.status} >
+                    value={this.props.fish.status}
+                >
                     <option value="available">Fresh!</option>
                     <option value="unavailable">Sold Out!</option>
                 </select>
-                <textarea 
+                <textarea
                     name="desc"
                     onChange={this.handleChange}
-                    value={this.props.fish.desc} />
-                <input 
-                    type="text" 
+                    value={this.props.fish.desc}
+                />
+                <input
+                    type="text"
                     name="image"
                     onChange={this.handleChange}
-                    value={this.props.fish.image} />
-                <button onClick={() => {this.props.deleteFish(this.props.index)}}>Remove Fish</button>
+                    value={this.props.fish.image}
+                />
+                <button
+                    onClick={() => {
+                        this.props.deleteFish(this.props.index);
+                    }}
+                >
+                    Remove Fish
+                </button>
             </div>
-            
-        )
+        );
     }
 }
 
